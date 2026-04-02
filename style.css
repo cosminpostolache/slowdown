@@ -55,3 +55,8 @@ footer {
   padding: 10px;
   background-color: #ddd;
 }
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
