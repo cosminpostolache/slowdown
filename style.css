@@ -20,13 +20,17 @@ header {
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
 }
 
-.logo img {
-  height: 40px; /* control size here */
+.logo {
+  justify-self: start;
+}
+
+nav {
+  justify-self: center;
 }
 
 nav a {
@@ -40,6 +44,7 @@ nav a:hover {
   text-decoration: underline;
 }
 .hero {
+      height: 80vh; /* or 400px */
   background: url('images/background_with_scroll.png') center/cover;
   color: white;
   padding: 80px 20px;
