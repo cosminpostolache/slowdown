@@ -9,7 +9,6 @@ header {
   background-color: #6fae9b;
   color: white;
   padding: 15px;
-  text-align: center;
 }
 
 .navbar {
@@ -17,24 +16,22 @@ header {
   top: 0;
   width: 100%;
   background: transparent;
+  padding: 10px 20px;
 }
 
 .nav-container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  justify-self: start;
-}
-
-nav {
-  justify-self: center;
+.logo img {
+  height: 40px;
+  width: auto;
 }
 
 nav a {
-  margin-left: 20px;
+  margin: 0 10px;
   color: white;
   text-decoration: none;
   font-size: 0.95rem;
@@ -43,12 +40,17 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+.logo {
+  justify-self: start;
+}
+
+nav {
+  justify-self: center;
+}
+
 .hero {
-      height: 80vh; /* or 400px */
-  background: url('images/background_with_scroll.png') center/cover;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+  height: 100vh;
+  background: url('images/background_with_scroll.png') center/cover no-repeat;
 }
 
 section {
@@ -62,6 +64,6 @@ footer {
 }
 
 .logo img {
-  height: 32px;
+  height: 152px;
   width: auto;
 }
