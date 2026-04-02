@@ -5,33 +5,40 @@ body {
   color: #333;
 }
 
-header {
-  background-color: #6fae9b;
-  color: white;
-  padding: 15px;
-}
-
+/* NAVBAR */
 .navbar {
   position: absolute;
   top: 0;
   width: 100%;
-  background: transparent;
   padding: 10px 20px;
+  background: transparent;
+  box-sizing: border-box;
 }
 
 .nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* LOGO */
 .logo img {
   height: 40px;
   width: auto;
+  display: block;
+}
+
+/* NAV LINKS */
+nav {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   color: white;
   text-decoration: none;
   font-size: 0.95rem;
@@ -40,30 +47,31 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-.logo {
-  justify-self: start;
-}
 
-nav {
-  justify-self: center;
-}
-
+/* HERO SECTION */
 .hero {
   height: 100vh;
   background: url('images/background_with_scroll.png') center/cover no-repeat;
+  
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 20px;
 }
 
+/* GENERAL SECTIONS */
 section {
   padding: 40px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 10px;
   background-color: #ddd;
-}
-
-.logo img {
-  height: 152px;
-  width: auto;
 }
